@@ -201,6 +201,8 @@ h3 { font-size: 1.3rem; letter-spacing: -0.01em; }
 .scope h2 { margin-bottom: 0.8rem; }
 .scope .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.4rem; }
 .tag { font-size: 0.82rem; font-weight: 600; padding: 0.4rem 0.85rem; border-radius: 999px; background: rgba(242,240,233,0.1); border: 1px solid var(--border-soft); }
+.tag.off { opacity: 0.55; background: transparent; }
+.tag.on { background: rgba(163,230,53,0.16); border-color: rgba(163,230,53,0.3); color: var(--lime); }
 
 /* cta band */
 .cta-band { text-align: center; }
