@@ -134,7 +134,7 @@ h3 { font-size: 1.3rem; letter-spacing: -0.01em; }
   background: linear-gradient(#2c312a, #1c1f1a);
   box-shadow: 0 40px 80px -30px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.04) inset;
 }
-.phone-img { display: block; width: 100%; border-radius: 30px; }
+.phone-img { display: block; width: 100%; height: auto; border-radius: 30px; }
 .phone-screen {
   border-radius: 32px; overflow: hidden; background: linear-gradient(170deg, var(--teal-1), var(--teal-3) 55%, #0c211d);
   padding: 22px 16px 16px; height: 540px; position: relative;
