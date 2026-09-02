@@ -91,21 +91,9 @@ h3 { font-size: 1.3rem; letter-spacing: -0.01em; }
 .btn .arrow { transition: transform 0.18s; }
 .btn:hover .arrow { transform: translateX(3px); }
 
-/* ---------- nav ---------- */
-.nav {
-  position: sticky; top: 0; z-index: 50;
-  backdrop-filter: saturate(140%) blur(14px);
-  background: rgba(246, 244, 236, 0.72);
-  border-bottom: 1px solid var(--border-soft);
-}
-.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+/* ---------- brand (footer) ---------- */
 .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
 .brand img { width: 30px; height: 30px; border-radius: 8px; }
-.nav-links { display: flex; align-items: center; gap: 1.4rem; }
-.nav-links a.link { color: var(--paper-70); font-weight: 500; font-size: 0.95rem; }
-.nav-links a.link:hover { color: var(--paper); }
-.nav .btn { padding: 0.55rem 1.1rem; font-size: 0.92rem; }
-@media (max-width: 560px) { .nav-links .link { display: none; } }
 
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 7vw, 5rem); }
