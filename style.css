@@ -206,14 +206,6 @@ h3 { font-size: 1.3rem; letter-spacing: -0.01em; }
 .cta-band .lede { margin: 0 auto 2rem; }
 .cta-band .hero-cta { justify-content: center; }
 
-/* status pill */
-.status {
-  display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; font-weight: 600;
-  padding: 0.4rem 0.9rem; border-radius: 999px; background: rgba(224,162,60,0.16); color: #8a5c10;
-  border: 1px solid rgba(224,162,60,0.3);
-}
-.status .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--invasive); }
-
 /* faq */
 .faq { display: grid; gap: 14px; }
 .faq details {
