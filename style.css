@@ -91,9 +91,11 @@ h3 { font-size: 1.3rem; letter-spacing: -0.01em; }
 .btn .arrow { transition: transform 0.18s; }
 .btn:hover .arrow { transform: translateX(3px); }
 
-/* ---------- brand (footer) ---------- */
+/* ---------- brand ---------- */
 .brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
 .brand img { width: 30px; height: 30px; border-radius: 8px; }
+.hero-brand { width: fit-content; font-size: 1.4rem; margin-bottom: clamp(1.8rem, 4vw, 2.6rem); }
+.hero-brand img { width: 36px; height: 36px; border-radius: 9px; }
 
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 7vw, 5rem); }
