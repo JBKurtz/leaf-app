@@ -256,3 +256,62 @@ h3 { font-size: 1.3rem; letter-spacing: -0.01em; }
 /* scroll reveal */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s cubic-bezier(0.2,0.8,0.2,1), transform 0.7s cubic-bezier(0.2,0.8,0.2,1); }
 .reveal.in { opacity: 1; transform: none; }
+
+/* ---------- the flow: camera, traits, identification (2026-11-20) ---------- */
+.flow { display: grid; gap: clamp(3rem, 7vw, 5rem); }
+.flow-step { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.flow-step:nth-child(even) .flow-copy { order: 2; }
+.flow-copy .num {
+  font-family: var(--display); font-weight: 700; font-size: 1rem; color: var(--lime-ink);
+  width: 34px; height: 34px; border-radius: 10px; background: var(--lime); display: grid; place-items: center; margin-bottom: 1rem;
+}
+.flow-copy h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.8rem; }
+.flow-copy p { color: var(--paper-70); max-width: 52ch; }
+.flow-copy p + p { margin-top: 0.8rem; }
+.flow-shots { display: flex; gap: 18px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+.flow-shots .phone-sm:nth-child(2) { margin-top: 2.2rem; }
+.shot-slot {
+  width: 216px; aspect-ratio: 820 / 1782; border-radius: 36px; border: 2px dashed var(--border);
+  display: grid; place-items: center; text-align: center; padding: 1.5rem; color: var(--paper-46); font-size: 0.85rem;
+}
+@media (max-width: 780px) {
+  .flow-step { grid-template-columns: 1fr; }
+  .flow-step:nth-child(even) .flow-copy { order: 0; }
+  .flow-shots .phone-sm:nth-child(2) { margin-top: 0; }
+}
+
+/* ---------- the profile's pages ---------- */
+.page-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.page-card {
+  background: var(--moss); border: 1px solid var(--border-soft); border-radius: var(--radius);
+  padding: 1.6rem; display: grid; gap: 1rem; align-content: start; min-width: 0;
+}
+.page-card .phone-sm { margin: 0 auto; }
+.page-card h3 { font-size: 1.15rem; }
+.page-card p { color: var(--paper-70); font-size: 0.95rem; }
+.page-card .eyebrow { display: block; }
+.page-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 18px; }
+.page-list .page-card { padding: 1.4rem; }
+@media (max-width: 960px) { .page-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .page-grid { grid-template-columns: 1fr; } }
+
+/* ---------- the four promises (2026-11-20) ---------- */
+.promises { padding-top: 0; }
+.promise-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.promise {
+  background: var(--moss); border: 1px solid var(--border-soft); border-radius: var(--radius);
+  padding: 1.6rem; min-width: 0;
+}
+.promise .ficon {
+  width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center;
+  font-size: 1.4rem; margin-bottom: 1rem; background: rgba(163,230,53,0.28);
+}
+.promise h3 { font-size: 1.2rem; margin-bottom: 0.4rem; }
+.promise p { color: var(--paper-70); font-size: 0.95rem; }
+@media (max-width: 900px) { .promise-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .promise-grid { grid-template-columns: 1fr; } }
+.promise-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+.promise-chips span {
+  font-family: var(--display); font-weight: 600; font-size: 0.9rem; padding: 0.45rem 0.95rem; border-radius: 999px;
+  background: rgba(163,230,53,0.3); border: 1px solid rgba(77,124,15,0.35); color: var(--fern);
+}
